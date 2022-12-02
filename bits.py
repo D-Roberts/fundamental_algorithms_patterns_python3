@@ -64,15 +64,15 @@ def main():
 	# int n has O(log(n)) set bits
 	# every int = sum(of power of 2)
 	print(x ^ 0 == x)
-	print(x ^ 1 == 4) #should be not x but ~x is something else
-	print(~x) # this is -6
-	print(~(x - 1)) # this should be 2's complet here -5 ??
+	print(x ^ 1 == 4)
+	print(~x) 
+	print(~(x - 1)) 
 	print(x^x == 0, x & 0 == 0, x & 1 == x, x & x == x, x | 0 == x, x | 1 == 1, x | x == x)
 	print('MSB', (x & ( x - 1)))
 	print('lsb', x ^ (x&(x-1)))
 	import math
 	n = math.ceil(math.log(5))
-	print(2**(n-1) - x) # is this 2 complem? is that a neg num?
+	print(2**(n-1) - x) 
 	
 if __name__ == '__main__':
 	main()

@@ -71,6 +71,6 @@ class Treap:
 			root.right = self.delete(root.right)
 
 class RTree:
-	"""not implemented in geeks; for geospatial coord; holds bounding boxes"""
+	
 
 

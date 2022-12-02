@@ -1,5 +1,4 @@
 """
-Fluent Python (and leet problems)
 
 Several options
 
@@ -90,8 +89,6 @@ def main():
 		# must join the threads
 		# use the ThreadPoolExecutor context manager to do this for you.
 		# ThreadPoolExecutor with map can be hard to debug, 
-
-		# !!! if onee thread calls sleep it allows another to run.
 
 		# Race conditions: when two threads acceess the same resource
 

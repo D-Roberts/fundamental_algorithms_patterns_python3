@@ -27,8 +27,7 @@ class DSU1:
         return True
 
 
-# Optimize DSU with path compression; basically in find remember the path (not 100% clear on what this accomplishes)
-
+# path compression
 class DSU2:
     def __init__(self, n):
         self.par = list(range(n)) # not clear when you set it to -1 and how many
@@ -121,8 +120,6 @@ Steps:
 - iterate through adjacent vertices (to u) v and calculate dist(u) + u-v edge weight. if this 
 is < dist(v), update dist(v). 
 
-Incorrect geek impleme; this is much better
-https://leetcode.com/problems/cheapest-flights-within-k-stops/discuss/362377/Dijkstra-Python-commented-and-explained
 
 """
 

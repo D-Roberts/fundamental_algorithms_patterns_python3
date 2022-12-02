@@ -7,12 +7,12 @@ print(a)
 
 
 """ Main advantage is Union of 2 heaps in O(logn) time. all other ops as in binary heap.
-Maintain min heap in binomial trees. I think a list of trees in degree order
+Maintain min heap in binomial trees. A list of trees in degree order
 union: larger root becomes left child.
 k levels; 2*k trees: go to 2 to k from 2 of 2 to k -1. Num nodes is n choose k at level k
 
 (to be contiued at some point)
-https://www.sanfoundry.com/python-program-implement-binomial-heap/
+
 """
 class BinHeapNode:
 	def __init__(self, val):

@@ -23,7 +23,7 @@ class Graph:
 		self.graph = graph 
 		self.res_graph = [graph[i][:] for i in range(self.m)] # weights in the graph
 
-	 # Ford-Fulkerson SLOW DOWN. DONT MAKE STUPID MISTAKES NOW on the last 100.
+	 # Ford-Fulkerson 
 	 def bfs(self, parent, s, t):
 
 	 	

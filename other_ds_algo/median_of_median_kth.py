@@ -8,13 +8,11 @@ Methods:
 2. Use min heap: get heap of n; pop k times O(n+klogn)
 3. Use max heap: the sol I apply: O(nlogk)
 4. Quick select: pivot is last elem: the select with pivot method O(n**2) but most of time O(n); assume distinct elems.
-5. Expected linear time quick select: pivot select randomly (method from bootcamp); that is why swap to first elem; it mimics this "last elem picked as pivot"
-- really it mimics a "fisrt element oicked as pivot"
+5. Expected linear time quick select: pivot select randomly ; that is why swap to first elem; it mimics this "last elem picked as pivot"
+- really it mimics a "fisrt element picked as pivot"
 6. For worst case O(n) - median of medians to pick pivot
 
 
-N
-https://www.geeksforgeeks.org/kth-smallestlargest-element-unsorted-array-set-3-worst-case-linear-time/
 # this is buggy - just this is the general idea.
 
 """

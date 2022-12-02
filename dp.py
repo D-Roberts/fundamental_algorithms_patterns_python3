@@ -98,9 +98,7 @@ def dp_coin_change_1(coins, target):
         return backt()
             
 
-# https://leetcode.com/problems/combination-sum-ii/discuss/750378/Python3-DFS-solutionstemplates-to-6-different-classic-backtracking-problems-and-more
 
-#!!! Backtracing with memo and returning a number!!!
 def combinationSum4(self, nums: List[int], target: int) -> int:
         
         # backtracking solution
@@ -153,8 +151,6 @@ def combinationSum4(self, nums: List[int], target: int) -> int:
         # print(dp)
         return dp[-1] == 0
 
-# Other problems from: 
-# https://leetcode.com/discuss/general-discussion/662866/dp-for-beginners-problems-patterns-sample-solutions
 
 # get longest chain of words one letter appart P 1048
 
@@ -250,7 +246,6 @@ def unique_subs(s, t):
 # larget s and index i and size m is at row level.
 # to know that you must loop back from m, n down to zero; think of dp subsequences: get result at step i-1, j-1 byt thinking of s[i:m] to t[j:n]
 # note in recursion - call of td(0, 0) so mimic to return dp[0][0]
-# In MIT video DP III - uses the idea of cost of edit: replace, delete, insert; also from top to 0. 
 
 m, n = len(s), len(t)
 dp = [[0] * (n + 1) for _ in range(m + 1)]

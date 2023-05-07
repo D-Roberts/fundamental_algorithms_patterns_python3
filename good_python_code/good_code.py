@@ -266,7 +266,7 @@ def burst_balloons(nums):
 	for left in range(n-2, -1, -1):
 		for right in range(left+2, n):
 			dp[left][right] = max(nums[i] * nums[left] * nums[right] + dp[left][i] + dp[i][right] for i in range(left+1, right)]) # trick is the choice
-			# of left and right and i in interval; TODO: deeply understand the choice and how left and right and i move
+			# of left and right and i in interval; 
 
 	return dp[0][n-1]
 	
